@@ -7,14 +7,7 @@ const Drinks = (props) => {
 
 
     const [food, setFood] = useState(Menu)
-    //console.log(food)
-
-    React.useEffect(() => {
-
-        setFood(food)
-        //fetchData()
-    }, [])
-
+    
 
     let drinksFood = food.filter(item => item.type === "Bebidas")
 

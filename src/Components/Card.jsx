@@ -38,15 +38,12 @@ const [finalPrice, setFinalPrice] = useState(0);
 useEffect(() => {
   if (burgerTypeState != undefined) {
     productList.push(burgerTypeState);
-    console.log(productList);
   }
 
   if (burgerPriceState != undefined) {
     totalList.push(burgerPriceState);
     const reducer = (accumulator, currentValue) => accumulator + currentValue;
     setFinalPrice(totalList.reduce(reducer));
-    console.log(finalPrice);
-    console.log(totalList);
   }
 }, [burgerTypeState, burgerPriceState]);
 
@@ -55,15 +52,12 @@ useEffect(() => {
 useEffect(() => {
   if (drinkTypeState != undefined) {
     productList.push(drinkTypeState);
-    console.log(productList);
   }
 
   if (drinkPriceState != undefined) {
     totalList.push(drinkPriceState);
     const reducer = (accumulator, currentValue) => accumulator + currentValue;
     setFinalPrice(totalList.reduce(reducer));
-    console.log(finalPrice);
-    console.log(totalList);
   }
 }, [drinkTypeState, drinkPriceState]);
 
@@ -72,15 +66,12 @@ useEffect(() => {
 useEffect(() => {
   if (snackTypeState != undefined) {
     productList.push(snackTypeState);
-    console.log(productList);
   }
 
   if (snackPriceState != undefined) {
     totalList.push(snackPriceState);
     const reducer = (accumulator, currentValue) => accumulator + currentValue;
     setFinalPrice(totalList.reduce(reducer));
-    console.log(finalPrice);
-    console.log(totalList);
   }
 }, [snackTypeState, snackPriceState]);
 

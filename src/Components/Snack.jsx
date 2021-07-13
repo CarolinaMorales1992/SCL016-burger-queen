@@ -7,14 +7,7 @@ const Snack = (props) => {
 
 
     const [food, setFood] = useState(Menu)
-    //console.log(food)
-
-    React.useEffect(() => {
-
-        setFood(food)
-        //fetchData()
-    }, [])
-
+    
 
     let snackFood = food.filter(item => item.type === "Acompañamiento")
 

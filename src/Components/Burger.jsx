@@ -7,15 +7,8 @@ const Burger = (props) => {
 
 
     const [food, setFood] = useState(Menu)
-    //console.log(food)
-
-    React.useEffect(() => {
-
-        setFood(food)
-        //fetchData()
-    }, [])
-
-
+    
+    
     let burgerFood = food.filter(item => item.type === "Hamburguesas")
 
     function burgerBtnFood(name, price) {
